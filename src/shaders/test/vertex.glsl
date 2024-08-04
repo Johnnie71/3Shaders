@@ -6,5 +6,9 @@ attribute vec3 position;
 
 void main()
 {
-    gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
+  vec2 foo = vec2(1.0, 2.0);
+  vec3 bar = vec3(foo, 3.0);
+
+
+  gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
 }
